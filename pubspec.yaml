@@ -1,0 +1,38 @@
+name: french_pronunciation_trainer
+description: "Тренажёр FR — UI ABA English + Piper siwis + Zipformer FR."
+publish_to: "none"
+version: 1.3.5+9
+
+environment:
+  sdk: ">=3.7.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  http: ^1.6.0
+  path_provider: ^2.1.4
+  path: ^1.9.0
+  shared_preferences: ^2.5.3
+  flutter_tts: ^4.0.2
+  just_audio: ^0.9.40
+  just_audio_windows: ^0.2.3
+  record: 5.1.2
+  permission_handler: ^11.3.1
+  wakelock_plus: ^1.2.8
+  window_manager: ^0.5.2
+  sherpa_onnx: 1.13.3
+  archive: ^4.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/blim.wav
+
+dependency_overrides:
+  record_platform_interface: 1.2.0
